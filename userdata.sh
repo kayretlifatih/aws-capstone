@@ -5,11 +5,11 @@ apt-get install python3 -y
 cd /home/ubuntu/
 TOKEN="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"
 git clone https://$TOKEN@<https://github.com/kayretlifatih/aws-capstone.git>
-cd /home/ubuntu/Project-503-Capstone-Project-Blog-Page-App-(Django)-on-AWS-Environment
+cd /home/ubuntu/aws-capstone
 apt install python3-pip -y
 apt-get install python3.7-dev libmysqlclient-dev -y
 pip3 install -r requirements.txt
-cd /home/ubuntu/Project-503-Capstone-Project-Blog-Page-App-(Django)-on-AWS-Environment/src
+cd /home/ubuntu/aws-capstone/src
 python3 manage.py collectstatic --noinput
 python3 manage.py makemigrations
 python3 manage.py migrate
